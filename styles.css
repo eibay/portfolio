@@ -48,3 +48,14 @@ section {
   background-color: #333;
   color: white;
 }
+
+.verse {
+  color: rgb(218, 215, 59);
+}
+
+.verse-text {
+  font-size: 2rem;
+  padding: 2rem;
+  background-color: #333;
+  color: white;
+}
