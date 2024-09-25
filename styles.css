@@ -39,8 +39,80 @@ header {
 .title {
   font-size: 7rem;
   color: white;
-  text-shadow: 0 0 5px black;;
+  text-shadow: 0 0 5px black;
 }
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
 
 section {
   font-size: 2rem;
@@ -50,7 +122,7 @@ section {
 }
 
 .verse {
-  color: rgb(218, 215, 59);
+  color: rgb(59, 133, 218);
 }
 
 .verse-text {
@@ -60,28 +132,87 @@ section {
   color: white;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
+.nav-header {
+  a {
+    text-decoration: none;
+  }
+
+   li {
+    color: #000;
+    padding: 20px;
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+
+  a {
+    box-shadow: inset 0 0 0 0 #6699FF;
+    color: #6699FF;
+    padding: 0 .50rem;
+    margin: 0 -.50rem;
+    transition: color 1s ease-in-out, box-shadow .5s ease-in-out;
+  }
+  a:hover {
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #6699FF;;
+  }
+
+  /* a:hover {
+    font-size:2rem;
+    transition: all .2s ease-in-out;
+    transform: scale(2);
+  } */
 }
 
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
+
+/* .nav-header nav a {
   text-decoration: none;
-}
+} */
+
+/* .nav-header nav li {
+  color: #000;
+  padding: 20px;
+  font-size: 1.2rem;
+  display: inline-block;
+} */
 
 /* Change the link color on hover */
-li a:hover {
-  background-color: #397e08;
-  color: white;
-}
+/* .nav-header a:hover {
+  font-size:2rem;
+  transition: all .2s ease-in-out;
+  transform: scale(2);
+} */
 
 .active {
   background-color: #04AA6D;
   color: white;
+}
+
+
+.footer {
+  background-color: #6699FF;
+  color: #FFFFFF;
+  font-family: 'Droid Sans', sans-serif;
+  text-align: center;
+  padding: 1.5em;
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  ul {
+    padding: 0;
+    font-size: 2em;
+
+    li {
+      display: inline-block;
+      width: 1.2em;
+
+      &.grow {
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
 }
