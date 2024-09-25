@@ -162,7 +162,6 @@ section {
   color: white;
 }
 
-
 .footer {
   background-color: #6699FF;
   color: #FFFFFF;
@@ -187,6 +186,18 @@ section {
         &:hover {
           transform: scale(1.5);
         }
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+    padding: 0.15em;  
+    &.grow {
+      transition: all .2s ease-in-out;
+      &:hover {
+        transform: scale(1.5);
       }
     }
   }
