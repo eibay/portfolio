@@ -148,7 +148,9 @@ section {
     color: #6699FF;
     padding: 0 .50rem;
     margin: 0 -.50rem;
-    transition: color 1s ease-in-out, box-shadow .5s ease-in-out;
+    /* transition: color 1s ease-in-out, box-shadow .5s ease-in-out; */
+    border: #000 2px;
+    transition: all 1s ease-out;
   }
   a:hover {
     color: #fff;
